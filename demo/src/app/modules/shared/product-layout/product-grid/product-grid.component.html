@@ -10,7 +10,7 @@
         <div class="row row-cols-5">
             <div *ngFor="let sd of finalData | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="col sliderBox">
                 <div class="img" *ngIf="sd.image">
-                    <img src="../../../../../assets/image/store/{{sd.image}}" alt="category Image" />
+                    <img src="assets/image/store/{{sd.image}}" alt="category Image" />
                 </div>
                 
                 <div *ngIf="sd.title" class="title">{{sd.title}}</div>
