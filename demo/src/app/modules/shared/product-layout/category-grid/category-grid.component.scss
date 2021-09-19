@@ -1,0 +1,54 @@
+@import '../../../../../assets/css/typography.scss';
+
+.catBox{
+    // flex-flow: initial;
+    // align-content: space-between;
+    // display: flex;
+
+    display: flex;
+    min-height: 80px;
+}
+.name{
+    font-family: 'Numans', sans-serif;
+    font-size: $font-size-small;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-bold;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $primary-text-color;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.qty{
+    font-family: 'Numans', sans-serif;
+    font-size: $font-size-xxsmall;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-regular;
+    line-height: 10px;
+    letter-spacing: 0.10000000149011612px;
+    text-align: left;
+
+}
+.imginfo {
+    //padding-left: 6px;
+    // display: flex;
+    // align-items: center;
+    padding-top: 18px;
+}
+.img {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+.qty {
+    padding-top: 6px;
+}
+.sac{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+  

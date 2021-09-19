@@ -1,0 +1,19 @@
+<div class="row row-cols-5">
+    <div *ngFor="let cat of categoryData" class="col  catBox">
+        <div class="img">
+            <img src="../../../../../assets/image/home/category/{{cat.image}}" alt="category Image" />
+        </div>
+        
+        <div class="imginfo">
+            <div class="name">{{cat.name}}</div>
+            <div class="qty break">{{cat.quantity}} products</div>
+        </div>
+    </div>
+
+    <div class="col-md-12 text-center">
+        <button class="secondarybutton sac">Show All Category</button>
+    </div>
+
+    
+
+</div>

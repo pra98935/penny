@@ -1,1 +1,132 @@
-<p>footer works!</p>
+<div class="container-fluid p-0" *ngIf="isShopPage == false">
+    <div class="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ftr1_left">
+                    <div class="footer1_img">
+                        <div class="footer1_img__outr">
+                            <img src="../../../assets/image/common/image 311.png">
+                        </div>
+                    </div>
+                    <div class="footer1_text ftr1txt">
+                        <div class="ftr1txt_heading">The Fastners Store</div>
+                        <div class="ftr1txt_text">
+                            <div>By Al-Rashed for Fasteners and Engineering Industries.  |  Riyadh</div>
+                            <div>CR. 223455  |  VAT ID. 223455  |  Classification: General </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftr1_right">
+                    <ul>
+                        <li>Products</li>
+                        <li>Categories</li>
+                        <li>About Us</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container footer1_btm">
+        <div class="row">
+                Powered by 
+                <span class="footer1_btm_logo">
+                    <img src="../../../assets/image/common/p.png" width="12px" style="margin-top: 4px"/>
+                    <img src="../../../assets/image/common/e.png" width="12px"  />
+                    <img src="../../../assets/image/common/n.png" width="11px"  />
+                    <img src="../../../assets/image/common/n.png" width="11px"  />
+                    <img src="../../../assets/image/common/y.png" width="12px"  style="margin-top: 4px"/>
+                </span> 
+                <span class="footer1_btm_logo2">
+                    <img src="../../../assets/image/common/ework/eblue.png">
+                    <img src="../../../assets/image/common/ework/m.png">
+                    <img src="../../../assets/image/common/ework/a.png">
+                    <img src="../../../assets/image/common/ework/r.png">
+                    <img src="../../../assets/image/common/ework/k.png">
+                    <img src="../../../assets/image/common/ework/e.png">
+                    <img src="../../../assets/image/common/ework/t.png">
+                    <img src="../../../assets/image/common/ework/p.png" style="margin-top: 2px">
+                    <img src="../../../assets/image/common/ework/l.png">
+                    <img src="../../../assets/image/common/ework/a.png">
+                    <img src="../../../assets/image/common/ework/c.png">
+                    <img src="../../../assets/image/common/ework/e.png">
+                </span>
+                |  www.pennymarketplace.co 
+        </div>
+    </div>
+</div>
+
+<!-- Footer For Shop Page -->
+<div class="continer-fluid movetotop" *ngIf="isShopPage == true">
+    <button class="mt_top" (click)="scrollToTop()">
+        Back To Top
+    </button>
+</div>
+
+<div class="container-fluid shop_ftrbtm" *ngIf="isShopPage == true">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Links -->
+            <div class="shop_ftrlink">
+                <div class="sf_heading">Categories</div>
+                <div class="col-md-12 seprator shop_ftr_sep"></div>
+                <ul>
+                    <li *ngFor="let sd1 of ftrlinks">
+                        {{sd1}}
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Logo Section -->
+            <div class="row shop_ftrbtm_mid">
+                <div class="col-md-4">
+                    <span class="main_logo_part1">
+                            <img src="../../../assets/image/common/p.png" style="margin-top: 8px" />
+                            <img src="../../../assets/image/common/e.png" />
+                            <img src="../../../assets/image/common/n.png" />
+                            <img src="../../../assets/image/common/n.png" />
+                            <img src="../../../assets/image/common/y.png" style="margin-top: 8px" />
+                    </span>
+
+                    <span class="main_logo_part2">
+                        <img src="../../../assets/image/common/ework/eblue.png">
+                        <img src="../../../assets/image/common/ework/m.png">
+                        <img src="../../../assets/image/common/ework/a.png">
+                        <img src="../../../assets/image/common/ework/r.png" >
+                        <img src="../../../assets/image/common/ework/k.png" style="position: relative; top: -2px;">
+                        <img src="../../../assets/image/common/ework/e.png">
+                        <img src="../../../assets/image/common/ework/t.png">
+                        <img src="../../../assets/image/common/ework/p.png" style="margin-top: 2px">
+                        <img src="../../../assets/image/common/ework/l.png">
+                        <img src="../../../assets/image/common/ework/a.png">
+                        <img src="../../../assets/image/common/ework/c.png">
+                        <img src="../../../assets/image/common/ework/e.png">
+                    </span>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="horizontallink">
+                        Suppliers  |  About us  |  Terms & conditions  |  FAQ’s 
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-right">
+                    <div class="connectwithus">
+                        <span class="connectwithus_text">Connect with us</span>
+                        <span class="connectwithus_img">
+                            <img src="../../../assets/image/common/linkedin.png" width="24px" />
+                            <img src="../../../assets/image/common/twitter.png" width="24px" />
+                        </span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <div class="sf_copyright text-center">
+            © 2020 Penny. All rights reserved | for more info visit www.penny.co
+    </div>
+
+</div>
+
+      

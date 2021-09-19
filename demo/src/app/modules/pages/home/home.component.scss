@@ -1,0 +1,30 @@
+@import "../../../../assets/css/typography.scss";
+
+
+.categoriesheading{
+    padding-bottom: 10px;
+}
+.bestseller, .featureproductheading{
+    margin-top: 40px;
+}
+.mtop40{
+    margin-top: 40px;
+}
+.custbreadcrumb{
+    margin-bottom: 40px;   
+    margin-top: 10px; 
+    font-size: $font-size-small;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-regular;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+        span{
+            padding-left: 14px;
+            &.active{
+                color: $primary-btn-clr;
+            }
+        }
+    
+}
+

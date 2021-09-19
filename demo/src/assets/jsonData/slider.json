@@ -1,0 +1,72 @@
+[
+    {
+        "title":"Black, High Performance full Nitrile coated glove extra text need to hide",
+        "brand":"Dewalt",
+        "sku":"08720-TU",
+        "sar":"199.00",
+        "name":"Al Nojod Almotahedah",
+        "MOQOrder":"23",
+        "MOQRFQ":"100",
+        "stock":0,
+        "image":"image 35.png",
+        "smallImg":"image1.png",
+        "btnText":"Add To Order",
+        "variation": true
+    },
+    {
+        "title":"3M , Half Mask Respirator, 6000 Series, M, Cartr extra text need to hide",
+        "brand":"3M",
+        "sku":"3M-6200",
+        "sar":"199.00",
+        "name":"Abdulrazzaq Mohammed ",
+        "MOQOrder":"23",
+        "MOQRFQ":"",
+        "stock":0,
+        "image":"image 301.png",
+        "smallImg":"image2.png",
+        "btnText":"Add To Order",
+        "variation": false
+    },
+    {
+        "title":"Yamamah Reinforcing Steel, 20mm in Diameter extra text need to hide",
+        "brand":"Yamamah Steel ",
+        "sku":"10107-6",
+        "sar":"",
+        "name":"Anod Malmtadah",
+        "MOQOrder":"",
+        "MOQRFQ":"100",
+        "stock":30,
+        "image":"image 302.png",
+        "smallImg":"image1.png",
+        "btnText":"Add To RFQ",
+        "variation": false
+    },
+    {
+        "title":"0.8/0.9 HP/KW Floor Treatment & Polishing extra text need to hide",
+        "brand":"Raimondi",
+        "sku":"606012",
+        "sar":"",
+        "name":"23 Suppliers",
+        "MOQOrder":"",
+        "MOQRFQ":"",
+        "stock":10,
+        "image":"image 303.png",
+        "smallImg":"image1.png",
+        "btnText":"Add To Order",
+        "variation": false
+    },
+    {
+        "title":"Yamamah Reinforcing Steel, 20mm in Diameter extra text need to hide",
+        "brand":"Yamamah Steel",
+        "sku":"10107-6",
+        "sar":"",
+        "name":"Anod Malmtadah",
+        "MOQOrder":"",
+        "MOQRFQ":"100",
+        "stock":30,
+        "image":"image 35.png",
+        "smallImg":"image1.png",
+        "btnText":"Add To Order",
+        "variation": false
+    }
+]

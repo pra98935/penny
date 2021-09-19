@@ -5,4 +5,5 @@ export const Const = {
     HOME_URL: 'home',
     CATEGORY_URL: 'categories',
     PRODUCTS_URL: 'products',
+    CATEGORY_IMAGE_PATH: '../../../../../assets/images/home/category/',
 };

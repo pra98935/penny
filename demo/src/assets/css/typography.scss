@@ -1,0 +1,62 @@
+// font size
+$font-size-xxsmall: 9px;
+$font-size-xsmall: 11px;
+$font-size-small: 13px;
+$font-size-regular: 16px;
+$font-size-large: 25px;
+$font-size-x-large: 33px;
+$font-size-xx-large: 49px;
+$font-size-xxx-large: 65px;
+$font-size-xxxx-large: 97px;
+
+
+// font weight
+//$font-weight-light:	400;
+$font-weight-regular:400;
+$font-weight-normal:600;
+$font-weight-bold:	700;
+
+// font style
+$font-style-normal: normal;
+
+$primary-text-color: black;
+$primary-btn-clr: #2985FA;
+$null-btn-clr: #fff;
+$drak-blue-clr: #1F21CB;
+
+//button
+.primarybutton{
+    height: 42px;
+    width: 210px;
+    border-radius: 28px;
+    background: #2985FA;
+   
+}
+
+.secondarybutton{
+    height: 42px;
+    width: 210px;
+    border-radius: 28px;
+    background: #FFFFFF;
+    border: 1px solid #2985FA;
+    &:hover{
+        background-color:$primary-btn-clr;
+        color:  $null-btn-clr;
+    }
+}
+
+h4{
+    font-size: $font-size-large;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-bold;
+    line-height: 30px;
+    letter-spacing: 0px;
+}
+
+
+
+
+.seprator{
+    border: 1px solid #F6F6F6;
+    height: 1px;
+}

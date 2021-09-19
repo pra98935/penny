@@ -1,1 +1,229 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Numans&display=swap");
+@import './assets/css/typography.scss';
+/************************************/
+/******Core Structure Changes********/
+/************************************/
+.w-20 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20% !important;
+  flex: 0 0 20% !important;
+  max-width: 20%;
+}
+
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm,
+.container {
+  max-width: 1240px;
+}
+body{
+    font-family: 'Numans', sans-serif;
+}
+a{
+    color: $primary-text-color;
+    &.active{
+        color: $primary-btn-clr;
+    }
+}
+
+.show > .btn-outline-primary.dropdown-toggle{
+    background-color: transparent;
+}
+
+/************************************/
+/************Search Box**************/
+/************************************/
+
+.searchbox{
+    input{
+        height: 48px;
+        border: 0.5px solid #CECECE;
+        border-radius: 10px;
+        width: 100%;
+        &:focus-visible{
+            outline: none
+        }
+    }
+    .searchbox_inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            height: 48px;
+            border: 0.5px solid #CECECE;
+            border-radius: 10px;
+            padding-right: 50px;
+            padding-left: 10px;
+            font-size: $font-size-small;
+            &:focus-visible{
+                outline: none
+            }
+        }
+        .glassicon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $drak-blue-clr;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: relative;
+            right: 42px;
+            border: none;
+            img{
+                width: 22px;
+            }
+        }
+    }
+}
+
+/************************************/
+/************Footer 1**************/
+/************************************/
+.footer1{
+    height: 230px;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ftr1_left{
+        display: flex;
+        .footer1_img{
+            width: 112px;
+            height: 112px;
+            background: $null-btn-clr;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .ftr1txt{
+            padding-top: 5px;
+            padding-left: 30px;
+            .ftr1txt_heading{
+                font-size: $font-size-x-large;
+                font-style: $font-style-normal;
+                font-weight: $font-weight-regular;
+                line-height: 35px;
+                letter-spacing: -1px;
+            }
+            .ftr1txt_text{
+                    font-size: $font-size-regular;
+                    font-style: $font-style-normal;
+                    font-weight: $font-weight-regular;
+                    line-height: 24px;
+                    letter-spacing: 0px;
+                    margin-top: 20px;
+            }
+        }
+            
+    }
+    .ftr1_right{
+        ul{
+            text-align: right;
+            margin-bottom: 0;
+            li{
+                font-size: $font-size-small;
+                font-style: $font-style-normal;
+                font-weight: $font-weight-regular;
+                line-height: 29px;
+                letter-spacing: 0px;
+                list-style: none;
+            }
+        }
+    }
+}
+
+/************************************/
+/********Banner Social Media*********/
+/************************************/
+.socialsec{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    .socialsec_text{
+        font-size: $font-size-small;
+        font-style: $font-style-normal;
+        font-weight: $font-weight-regular;
+        line-height: 19px;
+        letter-spacing: 0em;
+    }
+    .socialsec_sicon {
+        img{
+            margin-right: 10px;
+        }
+    }
+}
+
+
+ngb-pagination{
+    ul{
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        li.page-item {
+            margin-left: 14px;
+        }
+        li:nth-child(1) a, 
+        .li:first-child + li a, 
+        li:last-child a, 
+        li:nth-last-child(2) a{
+            background: transparent;
+        }
+
+        li:nth-child(1) a:hover, 
+        .li:first-child + li a:hover, 
+        li:last-child a:hover, 
+        li:nth-last-child(2) a:hover{
+            background: transparent;
+        }
+    }
+    .page-link:focus{
+        box-shadow: none;
+    }
+    .page-link {
+        position: relative;
+        padding: 0.5rem 0.75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: #007bff;
+        background-color: #FBFBFB;
+        border: transparent;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: $font-size-regular;
+        box-shadow: none;
+    }
+    .page-item.active .page-link {
+        z-index: 3;
+        color: #fff;
+        background-color: #8E8E8E;
+        border-color: transparent;
+        width: 67px;
+        height: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: $font-size-large;
+    }
+}
+
+// Logo
+.main_logo_part2 {
+    position: relative;
+    top: 12px;
+    left: -5px;
+    img{
+        margin-left: 1px;
+    }
+}

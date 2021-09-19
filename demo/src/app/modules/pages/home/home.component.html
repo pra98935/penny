@@ -1,1 +1,61 @@
-<h1>home works!</h1>
+<div class="container">
+    <div class="row">
+        <!-- Breadcrumb -->
+
+        <div class="col-md-12 seprator"></div>
+
+        <div class="custbreadcrumb">
+            <span class="pl-0"><img src="../../../../assets//image/common/keyboard_arrow_down_24px.png"></span>
+            <span>Go Back</span>
+            <span>|</span>
+            <span>You’re in:</span>
+            <span>Home</span>
+            <span><img src="../../../../assets/image/common/arrow_right_24px.png"></span>
+            <span>Supplier Stores</span>
+            <span><img src="../../../../assets/image/common/arrow_right_24px.png"></span>
+            <span class="active">The Fastners Store</span>
+        </div>
+    </div>
+
+    <!-- Category Section -->
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="text-center categoriesheading">Categories</h4>
+        </div>
+    </div>
+    <app-category-grid [categoryDataArr] = "categoryData"></app-category-grid>
+
+    <div class="col-md-12 seprator"></div>
+
+    <!-- Featured Product Section -->
+    <div class="col-md-12 pl-0">
+        <h4 class="text-left featureproductheading">Featured Products</h4>
+    </div>
+
+    <app-slider-grid [sliderDataArr]="sliderData"></app-slider-grid>
+
+    <div class="col-md-12 seprator mtop40"></div>
+    
+    <!-- Best Seller Product Section -->
+    <div class="col-md-12 pl-0">
+        <h4 class="text-left bestseller">Best sellers from the fastners store</h4>
+    </div>
+
+    <app-slider-grid [sliderDataArr]="sliderData"></app-slider-grid>
+
+    <!-- Social Media Section -->
+    <div class="col-md-12 socialsec">
+        <div class="socialsec_qr"><img src="../../../../assets/image/common/qr.png" width="84px" height="84px"/></div>
+        <div class="socialsec_text">
+                Scan the QR code to share this store or share on
+        </div>
+        <div class="socialsec_sicon">
+            <img src="../../../../assets/image/common/linkedin.png" width="18px" height="18px" />
+            <img src="../../../../assets//image/common/twitter.png" width="18px" height="18px" />
+            <img src="../../../../assets/image/common/facebook.png" width="18px" height="18px" />
+            <img src="../../../../assets/image/common/copy.png" width="18px" height="18px" />
+            <img src="../../../../assets/image/common/share.png" width="18px" height="18px" />
+        </div>
+    </div>
+</div>
+

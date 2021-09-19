@@ -1,1 +1,204 @@
-<p>header works!</p>
+<div class="container-fluid header1 p-0">
+    <!-- Top Header -->
+    <div class="container-fluid topheader"> 
+        <div class="container">
+            <div class="row">
+                <!-- Left section -->
+                <div class="topheader_left mainlogo col-md-2 p-0">
+                    <span class="main_logo_part1">
+                        <img src="../../../assets/image/common/p.png" style="margin-top: 8px" />
+                        <img src="../../../assets/image/common/e.png" />
+                        <img src="../../../assets/image/common/n.png" />
+                        <img src="../../../assets/image/common/n.png" />
+                        <img src="../../../assets/image/common/y.png" style="margin-top: 8px" />
+                    </span>
+                    <span class="main_logo_part2">
+                        <img src="../../../assets/image/common/ework/eblue.png">
+                        <img src="../../../assets/image/common/ework/m.png">
+                        <img src="../../../assets/image/common/ework/a.png">
+                        <img src="../../../assets/image/common/ework/r.png" >
+                        <img src="../../../assets/image/common/ework/k.png" style="position: relative; top: -2px;">
+                        <img src="../../../assets/image/common/ework/e.png">
+                        <img src="../../../assets/image/common/ework/t.png">
+                        <img src="../../../assets/image/common/ework/p.png" style="margin-top: 2px">
+                        <img src="../../../assets/image/common/ework/l.png">
+                        <img src="../../../assets/image/common/ework/a.png">
+                        <img src="../../../assets/image/common/ework/c.png">
+                        <img src="../../../assets/image/common/ework/e.png">
+                    </span>
+                </div>
+
+                <!-- Middle section -->
+                <div class="topheader_mid col-md-6">
+
+                    <!-- Dropdown -->
+                    <div ngbDropdown class="d-inline-block">
+                        <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{selectedItm}}</button>
+                        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <button (click)="changeItm('Mobile')" ngbDropdownItem>Mobile</button>
+                            <button (click)="changeItm('Camera')" ngbDropdownItem>Camera</button>
+                            <button (click)="changeItm('Laptop')" ngbDropdownItem>Laptop</button>
+                        </div>
+                    </div>
+
+                    <!-- search box -->
+                    <div class="header1_search pl-0 mt-0">
+                        <div class="searchbox">
+                            <div class="searchbox_inner">
+                                <input type="text" name="search" placeholder="Search product or service"
+                                    class="searchbox_text">
+                                <button class="glassicon">
+                                    <img src="../../../../assets/image/common/search.png">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right section -->
+                <div class="topheader_right col-md-4">
+                    <div class="thr_userinfo">
+                        <span><img src="../../../assets/image/common/avatar.png" /></span>
+                        <span class="thr_un">Hello Nitin</span>
+                        <span><img src="../../../assets/image/common/downarrw.png"></span>
+                    </div>
+
+                    <div class="thr_icon">
+                        <div class="thr_lang">E</div>
+                        <div class="thr_globe"><img src="../../../assets/image/common/globe.png" width="20px"></div>
+                        <div class="thr_sep">|</div>
+                        <div class="thr_bell"><img src="../../../assets/image/common/bell.png" width="16px"></div>
+                        <div class="thr_sep">|</div>
+                        <div class="thr_tag">
+                            <img src="../../../assets/image/common/tag.png" width="18px">
+                            <span class="notification">0</span>
+                        </div>
+                        <div class="thr_sep">|</div>
+                        <div class="thr_cart">
+                            <img src="../../../assets/image/common/cart.png" width="25px">
+                            <span class="notification">0</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************************** -->
+    <!-- This Section Will show only for ecommerce page -->
+    <!-- ********************************************** -->
+    <div class="container-fluid commonPageHeader" *ngIf="isShopPage == true">
+        <div class="row">
+            <!-- Banner -->
+            <div class="footer1 col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 ftr1_left">
+                                <div class="footer1_text ftr1txt p-0">
+                                    <div class="ftr1txt_heading">Supplier Stores</div>
+                                    <div class="ftr1txt_text">
+                                        <div>
+                                            Visit the supplier store and start dealing with your supplier. With Penny marketplace is one stop to send RFQs, Direct Purchase Orders to your suppliers. Track your delivery, bills & payments History and much more...
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- search box -->
+                            <div class="col-md-12 header1_search pl-0">
+                                <div class="searchbox">
+                                    <div class="searchbox_inner">
+                                        <input type="text" name="search" placeholder="Search supplier store"
+                                            class="searchbox_text">
+                                        <button class="glassicon">
+                                            <img src="../../../../assets/image/common/search.png">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************************************** -->
+    <!-- This Section Will show only for Common page -->
+    <!-- ********************************************** -->
+    <div class="container shopPageHeader" *ngIf="isShopPage == false">
+        <div class="row">
+            <!-- Banner -->
+            <div class="footer1 col-md-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 ftr1_left">
+                            <div class="footer1_img">
+                                <div class="footer1_img__outr">
+                                    <img src="../../../assets/image/common/image 311.png">
+                                </div>
+                            </div>
+                            <div class="footer1_text ftr1txt">
+                                <div class="ftr1txt_heading">The Fastners Store</div>
+                                <div class="ftr1txt_text">
+                                    <div>By Al-Rashed for Fasteners and Engineering Industries. | Riyadh</div>
+                                    <div>CR. 223455 | VAT ID. 223455 | Classification: General </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ftr1_right">
+                            <!-- Social Media Section -->
+                            <div class="col-md-12 socialsec">
+
+                                <div class="socialsec_text text-right">
+                                    Scan to share
+                                </div>
+
+                                <div class="socialsec_qr text-right">
+                                    <img src="../../../../assets/image/common/qr.png" width="84px" height="84px" />
+                                </div>
+
+                                <div class="socialsec_sicon text-right">
+                                    <img src="../../../../assets/image/common/linkedin.png" width="18px"
+                                        height="18px" />
+                                    <img src="../../../../assets//image/common/twitter.png" width="18px"
+                                        height="18px" />
+                                    <img src="../../../../assets/image/common/facebook.png" width="18px"
+                                        height="18px" />
+                                    <img src="../../../../assets/image/common/copy.png" width="18px" height="18px" />
+                                    <img src="../../../../assets/image/common/share.png" width="18px" height="18px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- search box -->
+            <div class="col-md-4 header1_search pl-0">
+                <div class="searchbox">
+                    <div class="searchbox_inner">
+                        <input type="text" name="search" placeholder="Search Products, categories"
+                            class="searchbox_text">
+                        <button class="glassicon">
+                            <img src="../../../../assets/image/common/search.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="col-md-8 header1_nav nav pr-0">
+                <ul>
+                    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+                    <li><a routerLink="/shop" routerLinkActive="active"> Products</a></li>
+                    <li><a routerLink="/products/category" routerLinkActive="active">Categories</a></li>
+                    <li><a routerLink="/about" routerLinkActive="active">About Us</a></li>
+                    <li><a routerLink="/terms" routerLinkActive="active">Terms & Conditions</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

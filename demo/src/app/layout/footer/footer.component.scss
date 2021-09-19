@@ -1,0 +1,96 @@
+@import "../../../assets/css/typography.scss";
+
+
+
+.footer1_btm {
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: $font-size-small;
+    font-style: $font-style-normal;
+    font-weight: $font-weight-regular;
+    .footer1_btm_logo {
+        margin: 0 10px;
+        img {
+            margin-left: 2px;
+        }
+    }
+    .footer1_btm_logo2 {
+        margin-top: 5px;
+        margin-right: 5px;
+        margin-left: -12px;
+        img{
+            margin-left: 1px;
+        }
+    }
+}
+
+.movetotop{
+    background: #FBFBFB;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mt_top{
+        border: none;
+        background: transparent;
+        box-shadow: none;
+        font-size: $font-size-small
+    }
+}
+
+.shop_ftrbtm{
+    height: 465px;
+    background-color: #f6f6f6;
+    .shop_ftrlink{
+        width: 100%;
+        .sf_heading{
+            font-size: $font-size-small;
+            margin-top: 32px;
+        }
+        .shop_ftr_sep{
+            border-bottom: 1px solid #cecece;
+            height: 1px;
+            margin: 10px 0;
+            border-radius: 0;
+        }
+        ul{
+            padding-left: 0;
+            margin-bottom: 0;
+            height: 265px; 
+            -webkit-column-count: 5;
+               -moz-column-count: 5;
+                    column-count: 5; 
+
+        }
+        
+        ul li{
+            display: block; 
+            font-size: $font-size-xsmall;
+            line-height: 24px;
+        }
+    }
+    .horizontallink{
+        font-size: $font-size-small;
+    }
+    .connectwithus_text{
+        font-size: $font-size-small;
+        margin-right: 5px;
+    }
+    .connectwithus_img img{
+        margin-left: 5px;
+    }
+    .shop_ftrbtm_mid{
+        width: 100%;
+        align-items: center;
+    }
+    .sf_copyright{
+        margin-top: 60px;
+        border-top: 1px solid #cecece;
+        font-size: 12px;
+        padding-top: 8px;
+    }
+}
+
+

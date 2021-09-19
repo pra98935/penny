@@ -1,0 +1,177 @@
+@import "../../../assets/css/typography.scss";
+
+.header1 {
+    margin-bottom: 15px;
+    .header1_search{
+        margin-top: 15px;
+    }
+}
+
+.topheader{
+    height: 90px;
+    background: $null-btn-clr;
+    border-bottom: 1px solid #f6f6f6;
+    display: flex;
+    align-items: center;
+    .container {
+        max-width: 1320px;
+        .topheader_right{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .thr_userinfo{
+                margin-right: 16px;
+                img{
+                    border-radius: 100px;
+                }
+                .thr_un{
+                    font-style: $font-style-normal;
+                    font-weight: $font-weight-normal;
+                    font-size: $font-size-xsmall;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                    color: #000000;
+                    margin-left: 5px;
+                    margin-right: 10px;
+                }
+            }
+            .thr_icon {
+                display: flex;
+                align-items: center;
+                .thr_lang{
+                    color: $drak-blue-clr;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: $font-size-regular;
+                    line-height: 14px;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                }
+                .thr_sep {
+                    margin: 0 22px;
+                }
+                .notification{
+                    width: 16px;
+                    height: 17px;
+                    background: $drak-blue-clr;
+                    color: $null-btn-clr;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    padding: 0px 4px;
+                    top: 2px;
+                    position: absolute;
+                }
+            }
+        }
+
+        .topheader_mid{
+            width: 100%;
+            position: relative;
+            input{
+                border-radius: 191px;
+                padding-left: 125px;
+            }
+            .glassicon{
+                width: 45px;
+                height: 40px;
+                right: 47px;
+            }
+            .d-inline-block{
+                position: absolute;
+                top: 5px;
+                min-width: 106px;
+                .dropdown-toggle::after{
+                    top:2px;
+                    left:7px;
+                    position: relative;
+                }
+                .btn-outline-primary{
+                    margin-top: 4px;
+                    padding-left: 0;
+                    border-right: 1px solid #808080;
+                    border-radius: 0;
+                    padding-right: 20px;
+                }
+                button{
+                    border: none;
+                    color: $primary-text-color;
+                    font-size: $font-size-small;
+                    width: 100%;
+                    &:hover{
+                        background-color: transparent;
+                        color: $primary-text-color;
+                    }
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav{
+    margin-top: 15px;
+    ul{
+        display: flex;
+        margin-bottom: 0;
+        width: 100%;
+        justify-content: flex-end;
+        padding-left: 0;
+        li{
+            font-style: $font-style-normal;
+            font-size: $font-size-small;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            color: $primary-text-color;
+            margin-left: 20px;
+        }
+    }
+}
+
+.footer1{
+    background: linear-gradient(180deg, #DEDEFF 0%, #F5F6FF 100%);
+    .footer1_img{
+        box-shadow: 0px 30px 50px rgb(116 116 116 / 25%);
+    }
+}
+
+.socialsec{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
+.commonPageHeader{
+    .footer1{
+        height: 256px;
+        background:linear-gradient(180deg, #DEDEFF 0%, #F5F6FF 100%);
+        .ftr1_left .ftr1txt {
+            padding-top: 5px;
+            padding-left: 30px;
+            width: 655px;
+            margin: 0 auto;
+            text-align: center;
+            .ftr1txt_heading{
+                font-style: $font-style-normal;
+                font-weight: $font-weight-bold;
+                font-size: $font-size-large;
+                line-height: 30px;
+                color: $primary-text-color;
+            }
+            .ftr1txt_text{
+                font-style: $font-style-normal;
+                font-size: $font-size-small;
+                line-height: 21px;
+                color: $primary-text-color;
+            }
+        }
+        .searchbox_inner{
+            width: 556px;
+            margin: 0 auto;
+        }
+    }
+}

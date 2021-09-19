@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row ">
+
+          
+    </div>
+</div>
+
+<div class="container">
+    
+        <div class="row row-cols-5">
+            <div *ngFor="let sd of finalData | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" class="col sliderBox">
+                <div class="img" *ngIf="sd.image">
+                    <img src="../../../../../assets/image/store/{{sd.image}}" alt="category Image" />
+                </div>
+                
+                <div *ngIf="sd.title" class="title">{{sd.title}}</div>
+                
+                <div *ngIf="sd.subTitle" class="brand subtitle">by <span>{{sd.subTitle}}</span>></div>
+
+                <div *ngIf="sd.region" class="region">{{sd.region}}</div>
+                
+                <div class="col-md-12 text-center btn p-0">
+                    <button class="secondarybutton sac">Visit Store</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-12 paginationprodgrid">
+                <ngb-pagination [collectionSize]="finalData.length" [(page)]="page" [maxSize]="5" [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+            </div>    
+        </div>
+   
+</div>
